@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'abhayalibre_regular';
+    src: url('fonts/AbhayaLibre-Regular-webfont.eot');
+    src: url('fonts/AbhayaLibre-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AbhayaLibre-Regular-webfont.woff2') format('woff2'),
+         url('fonts/AbhayaLibre-Regular-webfont.woff') format('woff'),
+         url('fonts/AbhayaLibre-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* GENERAL */
+
+body
+{
+	color: #000;
+	text-align: justify;
+	line-height: 160%;
+	font-family: abhayalibre_regular, Times, Arial, sans-serif;
+	font-size: 1.1em;
+
+	background: url("background.jpg");
+}
+
+a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #000;
+}
+
+a:hover
+{
+	font-weight: bold;
+}
+
+
+/* HEADER */
+
+#photo_profil
+{
+	float: right;
+	box-shadow: 8px 8px 20px black;
+	margin-right: 25%;
+	margin-bottom: 2%;
+}
+
+h1
+{
+	color: #000;
+	text-align: left;
+	margin-left: 25%;
+}
+
+#pitch
+{
+	font-size: 1.3em;
+	text-align: left;
+	margin-left: 25%;
+}
+
+
+/* MENU */
+
+#menu
+{
+	clear: right;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-top: 5%;
+	padding-top: 2%; 
+	padding-bottom: 2%; 
+	list-style: none;
+	font-size: 1.5em;
+
+	text-align: center;
+}
+
+#menu a:hover
+{
+	text-shadow: 5px 5px 5px black;
+}
+
+
+/* CORE */
+h2
+{
+	color: #ca6023;
+	font-weight: normal;
+}
+
+.section
+{
+	border: 1px solid black;
+	background: #ededed;
+}
+
+em
+{
+	font-style: normal;
+	font-weight: bold;
+}
