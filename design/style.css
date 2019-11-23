@@ -10,16 +10,14 @@
 
 }
 
-
-
-/* GENERAL */
+/**** GENERAL ****/
 
 body
 {
 	color: #000;
 	text-align: justify;
 	line-height: 160%;
-	font-family: abhayalibre_regular, Times, Arial, sans-serif;
+	font-family: abhayalibre_regular, Times, Arial, serif;
 	font-size: 1.1em;
 
 	background: url("background.jpg");
@@ -42,36 +40,48 @@ a:hover
 }
 
 
-/* HEADER */
+/**** HEADER ****/
 
-#photo_profil
+header
 {
-	float: right;
-	box-shadow: 8px 8px 20px black;
-	margin-right: 25%;
-	margin-bottom: 2%;
+	display: flex;
+	justify-content: space-around;
+
+	margin-bottom: 4%;
 }
 
-h1
+header h1
 {
 	color: #000;
-	text-align: left;
-	margin-left: 25%;
+}
+
+#presentation
+{
+	order: 1;
 }
 
 #pitch
 {
 	font-size: 1.3em;
-	text-align: left;
-	margin-left: 25%;
+}
+
+#photo_profil
+{
+	order: 2;
+	
+}
+
+#photo_profil img
+{
+	box-shadow: 10px 10px 30px black;
 }
 
 
-/* MENU */
+
+/**** MENU ****/
 
 #menu
 {
-	clear: right;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	margin-top: 5%;
@@ -89,21 +99,43 @@ h1
 }
 
 
-/* CORE */
-h2
+/**** SITE BODY ****/
+
+#bloc_content
+{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.content
+{
+	order:2	;
+	width: 28%;
+}
+
+.content:nth-child(2)
+{
+	width: 24%;
+}
+
+.content h2
 {
 	color: #ca6023;
 	font-weight: normal;
 }
 
-.section
-{
-	border: 1px solid black;
-	background: #ededed;
-}
-
-em
+.content em
 {
 	font-style: normal;
 	font-weight: bold;
+}
+
+#edge
+{
+	order: 1;
+	width: 200px;
+	background: url("edge.jpg");
+	background-repeat: repeat-y;
+	border-radius: 10px;
 }
