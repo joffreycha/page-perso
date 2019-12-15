@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'abhayalibre_regular';
-    src: url('fonts/AbhayaLibre-Regular-webfont.eot');
-    src: url('fonts/AbhayaLibre-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/AbhayaLibre-Regular-webfont.woff2') format('woff2'),
-         url('fonts/AbhayaLibre-Regular-webfont.woff') format('woff'),
-         url('fonts/AbhayaLibre-Regular-webfont.ttf') format('truetype');
+    src: url('design/fonts/AbhayaLibre-Regular-webfont.eot');
+    src: url('design/fonts/AbhayaLibre-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('design/fonts/AbhayaLibre-Regular-webfont.woff2') format('woff2'),
+         url('design/fonts/AbhayaLibre-Regular-webfont.woff') format('woff'),
+         url('design/fonts/AbhayaLibre-Regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -20,7 +20,7 @@ body
 	font-family: abhayalibre_regular, Times, Arial, serif;
 	font-size: 1.1em;
 
-	background: url("background.jpg");
+	background: url("design/images/background.jpg");
 }
 
 a
@@ -135,7 +135,26 @@ header h1
 {
 	order: 1;
 	width: 200px;
-	background: url("edge.jpg");
+	background: url("design/images/edge.jpg");
 	background-repeat: repeat-y;
 	border-radius: 10px;
+}
+
+@media all and (max-width: 1024px)
+{
+	#bloc_content
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content, .content:nth-child(2)
+	{
+		width: 90%;
+	}
+
+	#edge
+	{
+		display: none;
+	}
 }
